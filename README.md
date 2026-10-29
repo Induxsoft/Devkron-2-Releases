@@ -26,14 +26,14 @@ unzip Devkron-2.0-Linux-x64.zip -d /opt          # Windows: Expand-Archive Devkr
 
 ## Documentación
 
-- [Descargas y contenido de los paquetes](https://docs.induxsoft.net/es/devkron/2.0/instalacion/descargas)
-- Instalación: [Linux](https://docs.induxsoft.net/es/devkron/2.0/instalacion/linux) ·
-  [Windows](https://docs.induxsoft.net/es/devkron/2.0/instalacion/windows)
-- [Licencia](https://docs.induxsoft.net/es/devkron/2.0/instalacion/licencia)
-- [dklwebsvr](https://docs.induxsoft.net/es/devkron/2.0/instalacion/dklwebsvr) ·
-  [IIS (iis2dkl)](https://docs.induxsoft.net/es/devkron/2.0/instalacion/iis) ·
+- [Descargas y contenido de los paquetes](https://docs.induxsoft.net/es/devkron/2.0/instalacion/descargas.md)
+- Instalación: [Linux](https://docs.induxsoft.net/es/devkron/2.0/instalacion/linux.md) ·
+  [Windows](https://docs.induxsoft.net/es/devkron/2.0/instalacion/windows.md)
+- [Licencia](https://docs.induxsoft.net/es/devkron/2.0/instalacion/licencia.md)
+- [dklwebsvr](https://docs.induxsoft.net/es/devkron/2.0/instalacion/dklwebsvr.md) ·
+  [IIS (iis2dkl)](https://docs.induxsoft.net/es/devkron/2.0/instalacion/iis.md) ·
   [w3se](https://docs.induxsoft.net/es/productos/tools/w3se/) ·
   [httptn](https://docs.induxsoft.net/es/productos/tools/httptn/)
-- [Devkron](https://docs.induxsoft.net/es/devkron)
+- [Devkron](https://docs.induxsoft.net/es/devkron/)
 
 Cada versión vive en su propia carpeta y no se sobrescribe.
