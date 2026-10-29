@@ -1,0 +1,74 @@
+{
+  "paquete": "Devkron 2.0",
+  "version": "2.0.0-rc.1",
+  "fecha": "2026-10-29",
+  "plataformas": [
+    "linux-x64",
+    "win-x64"
+  ],
+  "componentes": {
+    "dkl": {
+      "repo": "Induxsoft/devkron2",
+      "commit": "302cf53f2aea0fb0cdf03594863a8ab2d3e3b255",
+      "version": "2.0.0-rc.1",
+      "notas": "motor, FastCGI, adaptadores MySQL/SQL Server/PostgreSQL/Firebird, licencia, .dkh y Devkron.Ext.Base/Http/Threads; .NET 10.0.13 autocontenido, ReadyToRun composite"
+    },
+    "dkl-web": {
+      "repo": "Induxsoft/dkl-web",
+      "commit": "eec15ef9ffe8ce554f360bb6c672a4704405e105",
+      "version": "sin versión (main)",
+      "notas": "fso, crudl, _templates y utilidades web"
+    },
+    "dklwebsvr": {
+      "repo": "Induxsoft/dklwebsvr",
+      "commit": "e332ee576dcf267d733c6f98338141e78fa03de8",
+      "version": "main-e332ee5"
+    },
+    "w3se": {
+      "repo": "Induxsoft/w3se",
+      "commit": "18fe6eab3792d0327f0940e13632d2c3f737b58e",
+      "version": "sin versión (main)"
+    },
+    "httptn": {
+      "repo": "Induxsoft/httptn",
+      "commit": "32b1d7601856a34b97e1ecf820d1d237d77157f3",
+      "version": "main-32b1d76",
+      "notas": "servidor y agente en el mismo ejecutable"
+    },
+    "iis2dkl": {
+      "repo": "Induxsoft/iis2dkl",
+      "commit": "9c91f379bdd84564a3f27dcd5bb5637f363f3eef",
+      "version": "main-9c91f37",
+      "plataformas": [
+        "win-x64"
+      ]
+    }
+  },
+  "thirdparty": {
+    "repo": "Induxsoft/dkl2-thirdparty",
+    "commit": "203bc70b11f5756a409d537a6d31d681d0de8473",
+    "bibliotecas": {
+      "csv": "1.0.0",
+      "office": "1.0.0",
+      "image": "1.0.0",
+      "html": "1.0.0",
+      "markdown": "1.0.0"
+    }
+  },
+  "compilacion": {
+    "dotnet_sdk": "10.0.113",
+    "go": "1.24.7",
+    "go_flags": "CGO_ENABLED=0 -trimpath -ldflags \"-s -w\""
+  },
+  "archivos": {
+    "linux-x64": "Devkron-2.0-Linux-x64.zip",
+    "win-x64": "Devkron-2.0-Windows-x64.zip",
+    "thirdparty": {
+      "csv": "thirdparty/dkl2-csv-1.0.0.zip",
+      "office": "thirdparty/dkl2-office-1.0.0.zip",
+      "image": "thirdparty/dkl2-image-1.0.0.zip",
+      "html": "thirdparty/dkl2-html-1.0.0.zip",
+      "markdown": "thirdparty/dkl2-markdown-1.0.0.zip"
+    }
+  }
+}
