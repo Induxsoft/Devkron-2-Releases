@@ -1,6 +1,6 @@
 {
   "paquete": "Devkron 2.0",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0",
   "fecha": "2026-10-29",
   "plataformas": [
     "linux-x64",
@@ -9,8 +9,8 @@
   "componentes": {
     "dkl": {
       "repo": "Induxsoft/devkron2",
-      "commit": "302cf53f2aea0fb0cdf03594863a8ab2d3e3b255",
-      "version": "2.0.0-rc.1",
+      "commit": "529eb789289fa206bd042766da80752b1ae3fe30",
+      "version": "2.0.0",
       "notas": "motor, FastCGI, adaptadores MySQL/SQL Server/PostgreSQL/Firebird, licencia, .dkh y Devkron.Ext.Base/Http/Threads; .NET 10.0.13 autocontenido, ReadyToRun composite"
     },
     "dkl-web": {
@@ -60,6 +60,7 @@
     "go": "1.24.7",
     "go_flags": "CGO_ENABLED=0 -trimpath -ldflags \"-s -w\""
   },
+  "linea": "Devkron 2.0 LTS",
   "archivos": {
     "linux-x64": "Devkron-2.0-Linux-x64.zip",
     "win-x64": "Devkron-2.0-Windows-x64.zip",
