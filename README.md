@@ -1,7 +1,7 @@
 # Devkron 2.0 LTS: paquetes de distribución
 
 Motor de Devkron (DKL) con su FastCGI, bibliotecas y herramientas (dklwebsvr, w3se, httptn e iis2dkl), listo para
-descomprimir en una carpeta. Trae su propio .NET: no requiere instalar nada más. No incluye instalador ni licencia.
+descomprimir en una carpeta y empezar a desarrollar.
 
 ## Versión vigente: 2.0.1
 
