@@ -33,12 +33,18 @@ del motor de cada una en [2.0-LTS/thirdparty](2.0-LTS/thirdparty/README.md).
 | [html](2.0-LTS/thirdparty/dkl2-html-1.0.0.zip) | 1.0.0 | 2.0.0 |
 | [markdown](2.0-LTS/thirdparty/dkl2-markdown-1.0.0.zip) | 1.0.0 | 2.0.0 |
 
+## Devkron Edge (dkle)
+
+Runtime ligero y gratuito de DKL para microservicios y conectores entre API HTTP (Linux x64, Linux ARM64 y Windows
+x64), con su propio ciclo de versiones en [2.0-LTS/dkle](2.0-LTS/dkle/README.md). Versión vigente: **2.0.1**.
+Documentación: https://docs.induxsoft.net/es/devkron/2.0/dkle/
+
 ## Versiones
 
 Cada línea LTS tiene su carpeta (`2.0-LTS/`) y cada distribución del motor su subcarpeta, que nunca se sobrescribe:
 `2.0-LTS/2.0.1/`, `2.0-LTS/2.0.2/`… (una línea futura sería `2.1-LTS/2.1.1/`). Los zips conservan el nombre de la
 línea (`Devkron-2.0-<SO>-x64.zip`). La versión vigente es la más alta de la línea. Las bibliotecas de terceros van
-en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip.
+en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip, y Devkron Edge en `2.0-LTS/dkle/<versión>/`.
 
 ## Documentación
 
@@ -50,4 +56,5 @@ en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip.
   [IIS (iis2dkl)](https://docs.induxsoft.net/es/devkron/2.0/instalacion/iis.md) ·
   [w3se](https://docs.induxsoft.net/es/productos/tools/w3se/) ·
   [httptn](https://docs.induxsoft.net/es/productos/tools/httptn/)
+- [Devkron Edge (dkle)](https://docs.induxsoft.net/es/devkron/2.0/dkle/)
 - [Devkron](https://docs.induxsoft.net/es/devkron/)
