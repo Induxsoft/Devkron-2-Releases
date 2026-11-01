@@ -1,0 +1,22 @@
+{
+  "paquete": "dkl-debug (depurador de Devkron)",
+  "version": "0.1.0",
+  "fecha": "2026-11-01",
+  "repo": "Induxsoft/devkron2 (privado), carpeta tools/dkl-debug",
+  "commit": "d6bf096",
+  "motor": "Devkron 2.0.2 (commit 7416ddb)",
+  "dotnet": "10.0, autocontenido, sin ReadyToRun",
+  "dependencias": {
+    "Lib.Harmony": "2.4.3"
+  },
+  "plataformas": [
+    "Linux-x64",
+    "Linux-arm64",
+    "Windows-x64"
+  ],
+  "probado": {
+    "Linux-x64": "posiciones 119,367/119,367 exactas; --check 21/21; DAP 151/151; salida igual a dkl en 270 kits",
+    "Linux-arm64": "sin ejecutar",
+    "Windows-x64": "sin ejecutar"
+  }
+}

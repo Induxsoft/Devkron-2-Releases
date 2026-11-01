@@ -1,0 +1,12 @@
+{
+  "paquete": "Extensión Devkron (DKL) para VS Code y Cursor",
+  "id": "induxsoft.devkron",
+  "version": "0.1.0",
+  "fecha": "2026-11-01",
+  "repo": "Induxsoft/devkron2 (privado), carpeta tools/vscode-devkron",
+  "commit": "9d9e0b9",
+  "vscode": "^1.85",
+  "editores": ["Visual Studio Code", "Cursor", "VSCodium"],
+  "depurador": "dkl-debug 0.1.0 o posterior (2.0-LTS/dkl-debug)",
+  "probado": "unidad 28/28, gramática, corpus de 300 archivos, contra dkl 2.0.2 26/26 y contra dkl-debug 4/4; falta probar en un editor real"
+}

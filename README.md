@@ -44,12 +44,19 @@ Runtime ligero y gratuito de DKL para microservicios y conectores entre API HTTP
 x64), con su propio ciclo de versiones en [2.0-LTS/dkle](2.0-LTS/dkle/README.md). Versión vigente: **2.0.1**.
 Documentación: https://docs.induxsoft.net/es/devkron/2.0/dkle/
 
+## Herramientas de desarrollo
+
+- **Depurador `dkl-debug`** (Linux x64, Linux ARM64, Windows x64), con su propio ciclo de versiones en
+  [2.0-LTS/dkl-debug](2.0-LTS/dkl-debug/README.md). Versión vigente: **0.1.0** (motor 2.0.2).
+- **Extensión para VS Code y Cursor** (`.vsix`), en [2.0-LTS/vscode](2.0-LTS/vscode/README.md). Versión vigente:
+  **0.1.0**.
+
 ## Versiones
 
 Cada línea LTS tiene su carpeta (`2.0-LTS/`) y cada distribución del motor su subcarpeta, que nunca se sobrescribe:
 `2.0-LTS/2.0.1/`, `2.0-LTS/2.0.2/`… (una línea futura sería `2.1-LTS/2.1.1/`). Los zips conservan el nombre de la
 línea (`Devkron-2.0-<SO>-x64.zip`). La versión vigente es la más alta de la línea. Las bibliotecas de terceros van
-en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip, y Devkron Edge en `2.0-LTS/dkle/<versión>/`.
+en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip, Devkron Edge en `2.0-LTS/dkle/<versión>/`, el depurador en `2.0-LTS/dkl-debug/<versión>/` y la extensión en `2.0-LTS/vscode/<versión>/`.
 
 ## Documentación
 
