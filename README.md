@@ -3,24 +3,24 @@
 Motor de Devkron (DKL) con su FastCGI, bibliotecas y herramientas (dklwebsvr, w3se, httptn e iis2dkl), listo para
 descomprimir en una carpeta y empezar a desarrollar.
 
-## Versión vigente: 2.0.2
+## Versión vigente: 2.0.3
 
 | Archivo | Plataforma | SHA-256 |
 |---|---|---|
-| [Devkron-2.0-Linux-x64.zip](2.0-LTS/2.0.2/Devkron-2.0-Linux-x64.zip) | Linux x64 | `c5cbaf7ed89cb1a004ccecdaee12c2f008ae53e6cfa637a8083684591029f117` |
-| [Devkron-2.0-Windows-x64.zip](2.0-LTS/2.0.2/Devkron-2.0-Windows-x64.zip) | Windows x64 | `1c223250f8144234ed09361635dba1381a9443bbcb3a263011f4a3d9e7e93663` |
+| [Devkron-2.0-Linux-x64.zip](2.0-LTS/2.0.3/Devkron-2.0-Linux-x64.zip) | Linux x64 | `e4d56887b3c5184bff1c4029ffc1d230b07a80acce9a851c4bbfe0c010ee0cac` |
+| [Devkron-2.0-Windows-x64.zip](2.0-LTS/2.0.3/Devkron-2.0-Windows-x64.zip) | Windows x64 | `cc6b079728989a9f25d3588a731af183eb6673b660ffac953e7a0e8c59f49762` |
 
-Sumas en [SHA256SUMS](2.0-LTS/2.0.2/SHA256SUMS); versiones y commits de cada componente en [manifest.json](2.0-LTS/2.0.2/manifest.json).
+Sumas en [SHA256SUMS](2.0-LTS/2.0.3/SHA256SUMS); versiones y commits de cada componente en [manifest.json](2.0-LTS/2.0.3/manifest.json).
 
-Novedades de 2.0.2: repositorios de conexiones en base de datos seguros con varios hilos (con `SQLDic/` y la
-herramienta `tools/dbrepo`), `connections.xml` se vuelve a leer si una conexión local falla y el archivo cambió,
-pila de excepciones atrapadas con tope de 100 y dklwebsvr 1.1.0 ([novedades](https://docs.induxsoft.net/es/devkron/2.0/introduccion/novedades.md)).
-La versión anterior sigue en [2.0-LTS/2.0.1](2.0-LTS/2.0.1/).
+Novedades de 2.0.3: la caché del árbol del servidor FastCGI guarda una sola vez el árbol de los archivos que
+comparten muchos sitios (raíces multiinquilino) y tiene un tope de memoria (512 MB por omisión, `"tree_cache_mb"`),
+y crear un objeto sobre una referencia nula ya no ocupa la ranura de `@null` ([novedades](https://docs.induxsoft.net/es/devkron/2.0/introduccion/novedades.md)).
+Las versiones anteriores siguen en [2.0-LTS/2.0.2](2.0-LTS/2.0.2/) y [2.0-LTS/2.0.1](2.0-LTS/2.0.1/).
 
 ## Verificar y descomprimir
 
 ```
-cd 2.0-LTS/2.0.2 && sha256sum -c SHA256SUMS
+cd 2.0-LTS/2.0.3 && sha256sum -c SHA256SUMS
 unzip Devkron-2.0-Linux-x64.zip -d /opt          # Windows: Expand-Archive Devkron-2.0-Windows-x64.zip C:\
 /opt/Devkron-2.0-Linux-x64/dkl -license          # sin licencia de 2.0 queda en modo demostración
 ```
@@ -54,7 +54,7 @@ Documentación: https://docs.induxsoft.net/es/devkron/2.0/dkle/
 ## Versiones
 
 Cada línea LTS tiene su carpeta (`2.0-LTS/`) y cada distribución del motor su subcarpeta, que nunca se sobrescribe:
-`2.0-LTS/2.0.1/`, `2.0-LTS/2.0.2/`… (una línea futura sería `2.1-LTS/2.1.1/`). Los zips conservan el nombre de la
+`2.0-LTS/2.0.1/`, `2.0-LTS/2.0.2/`, `2.0-LTS/2.0.3/`… (una línea futura sería `2.1-LTS/2.1.1/`). Los zips conservan el nombre de la
 línea (`Devkron-2.0-<SO>-x64.zip`). La versión vigente es la más alta de la línea. Las bibliotecas de terceros van
 en `2.0-LTS/thirdparty/` con su propia versión en el nombre del zip, Devkron Edge en `2.0-LTS/dkle/<versión>/`, el depurador en `2.0-LTS/dkl-debug/<versión>/` y la extensión en `2.0-LTS/vscode/<versión>/`.
 
