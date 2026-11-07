@@ -1,0 +1,23 @@
+{
+  "paquete": "dkl-debug (depurador de Devkron)",
+  "version": "0.1.1",
+  "fecha": "2026-11-06",
+  "repo": "Induxsoft/devkron2 (privado), carpeta tools/dkl-debug",
+  "commit": "3152527",
+  "motor": "Devkron 2.0.5.0 (commit 3152527; mismo código del motor que la distribución 2.0.5.0, 7166b07)",
+  "cambios": "Recompilado contra el motor 2.0.5.0 (A1, A2, A3). Sin cambios en el depurador; el parche de Interpreter.stepbystep(Element, ContextBlock) no cambió de firma.",
+  "dotnet": "10.0, autocontenido, sin ReadyToRun",
+  "dependencias": {
+    "Lib.Harmony": "2.4.3"
+  },
+  "plataformas": [
+    "Linux-x64",
+    "Linux-arm64",
+    "Windows-x64"
+  ],
+  "probado": {
+    "Linux-x64": "zip publicado: posiciones 116,364/116,364 exactas; --check 21/21; DAP 151/151; desde el código, salida igual a dkl en 288 kits; recorrido con puntos de interrupción igual a 0.1.0",
+    "Linux-arm64": "sin ejecutar (compila; misma lista de archivos que 0.1.0)",
+    "Windows-x64": "sin ejecutar (compila; misma lista de archivos que 0.1.0, salvo la DAC del runtime 10.0.13)"
+  }
+}

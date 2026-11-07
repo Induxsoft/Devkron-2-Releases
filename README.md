@@ -56,7 +56,7 @@ Documentación: https://docs.induxsoft.net/es/devkron/2.0/dkle/
 ## Herramientas de desarrollo
 
 - **Depurador `dkl-debug`** (Linux x64, Linux ARM64, Windows x64), con su propio ciclo de versiones en
-  [2.0-LTS/dkl-debug](2.0-LTS/dkl-debug/README.md). Versión vigente: **0.1.0** (motor 2.0.2).
+  [2.0-LTS/dkl-debug](2.0-LTS/dkl-debug/README.md). Versión vigente: **0.1.1** (motor 2.0.5.0).
 - **Extensión para VS Code y Cursor** (`.vsix`), en [2.0-LTS/vscode](2.0-LTS/vscode/README.md). Versión vigente:
   **0.1.0**.
 
