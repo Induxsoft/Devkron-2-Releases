@@ -3,17 +3,20 @@
 Motor de Devkron (DKL) con su FastCGI, bibliotecas y herramientas (dklwebsvr, w3se, httptn e iis2dkl), listo para
 descomprimir en una carpeta y empezar a desarrollar.
 
-## Versión vigente: 2.0.5.0
+## Versión vigente: 2.0.5.1
 
 | Archivo | Plataforma | SHA-256 |
 |---|---|---|
-| [Devkron-2.0.5.0-Linux-x64.zip](2.0-LTS/2.0.5.0/Devkron-2.0.5.0-Linux-x64.zip) | Linux x64 | `5fb7f5e0456be24540363ed9f70ad76bfc86fb5b7c06dc19991e69964338c823` |
-| [Devkron-2.0.5.0-Windows-x64.zip](2.0-LTS/2.0.5.0/Devkron-2.0.5.0-Windows-x64.zip) | Windows x64 | `3841489b13392b91580d77b71d5f6f89e2d62c451d8dd9a24b49b614c5a26428` |
+| [Devkron-2.0.5.1-Linux-x64.zip](2.0-LTS/2.0.5.1/Devkron-2.0.5.1-Linux-x64.zip) | Linux x64 | `f5d54b00f693600289cf1213c23f4bff326b8f28a5aa70805bdf971634503b77` |
+| [Devkron-2.0.5.1-Windows-x64.zip](2.0-LTS/2.0.5.1/Devkron-2.0.5.1-Windows-x64.zip) | Windows x64 | `e23b7fccba5a33c302cd375b3237b45a77597f7ca191cf261b565bef3b8822eb` |
 
-Sumas en [SHA256SUMS](2.0-LTS/2.0.5.0/SHA256SUMS); versiones y commits de cada componente en [manifest.json](2.0-LTS/2.0.5.0/manifest.json).
+Sumas en [SHA256SUMS](2.0-LTS/2.0.5.1/SHA256SUMS); versiones y commits de cada componente en [manifest.json](2.0-LTS/2.0.5.1/manifest.json).
 
 Desde 2.0.5.0 la numeración tiene cuatro partes (V.x.y.z) y el nombre del zip la lleva; la carpeta que trae dentro sigue
 siendo `Devkron-2.0-Linux-x64` (o `-Windows-x64`), como en las anteriores.
+
+Novedades de 2.0.5.1: dklwebsvr 1.1.1, que responde 302 cuando el programa manda `Location` sin `Status` (como nginx;
+antes salía 200 y el navegador no redirigía). El motor es el mismo de 2.0.5.0 (`dklversion()` = `2.0.5.0`).
 
 Novedades de 2.0.5.0: un `runscript`/`runcode` anidado ya no retiene lo que deja hasta el final del programa que lo
 lanzó (un programa largo que lanza muchos trabajadores ya no crece en memoria con cada uno ni llega al tope del pool
@@ -23,14 +26,14 @@ argumentos: se va directo al `exception` ([novedades](https://docs.induxsoft.net
 
 > **No use 2.0.3.** Tiene la regresión de `ref x:y` que corrige 2.0.4; se conserva solo como registro.
 
-Las versiones anteriores siguen en [2.0-LTS/2.0.4](2.0-LTS/2.0.4/), [2.0-LTS/2.0.3](2.0-LTS/2.0.3/) (no usar),
+Las versiones anteriores siguen en [2.0-LTS/2.0.5.0](2.0-LTS/2.0.5.0/), [2.0-LTS/2.0.4](2.0-LTS/2.0.4/), [2.0-LTS/2.0.3](2.0-LTS/2.0.3/) (no usar),
 [2.0-LTS/2.0.2](2.0-LTS/2.0.2/) y [2.0-LTS/2.0.1](2.0-LTS/2.0.1/).
 
 ## Verificar y descomprimir
 
 ```
-cd 2.0-LTS/2.0.5.0 && sha256sum -c SHA256SUMS
-unzip Devkron-2.0.5.0-Linux-x64.zip -d /opt      # Windows: Expand-Archive Devkron-2.0.5.0-Windows-x64.zip C:\
+cd 2.0-LTS/2.0.5.1 && sha256sum -c SHA256SUMS
+unzip Devkron-2.0.5.1-Linux-x64.zip -d /opt      # Windows: Expand-Archive Devkron-2.0.5.1-Windows-x64.zip C:\
 /opt/Devkron-2.0-Linux-x64/dkl -license          # sin licencia de 2.0 queda en modo demostración
 ```
 
